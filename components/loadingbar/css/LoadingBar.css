@@ -1,0 +1,39 @@
+.LoadingBar{
+    display: flex;
+    align-items: center;
+    width: 160px;
+}
+
+.LoadingBar__item{
+    border-radius: 50%;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+
+    animation-name: fadingDots;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes fadingDots {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.LoadingBar__second{
+    animation-delay: .2s;
+}
+.LoadingBar__third{
+    animation-delay: .4s;
+}
+.LoadingBar__forth{
+    animation-delay: .6s;
+}
